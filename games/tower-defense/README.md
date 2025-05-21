@@ -1,5 +1,5 @@
 ## 🏗️ 專案背景
-本專案為 **Udemy 課程《The Ultimate Guide to Creating a Tower Defense Game in Unity》** 的一個學習紀錄，參考專案結構與課程素材，並自己增加一些功能後的成品。
+本專案為 **Udemy 課程《The Ultimate Guide to Creating a Tower Defense Game in Unity》** 的一個學習紀錄，參考及學習課程影片、專案結構和素材，自己實作以及增加一些功能後的成品。
 
 ## 🎮 線上遊玩
 [點我開始玩](https://shlason.github.io/games/tower-defense/)
