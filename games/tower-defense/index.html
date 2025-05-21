@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity Web Player | Tower Defense</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-  </head>
+    <style>
+        #external-links {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin-left: auto;
+        }
+
+            #external-links a {
+                font-family: sans-serif;
+                font-size: 14px;
+                padding: 6px 10px;
+                background: #1e88e5;
+                color: #fff;
+                border-radius: 4px;
+                text-decoration: none;
+                transition: background .2s;
+            }
+
+                #external-links a:hover {
+                    background: #1565c0;
+                }
+    </style>
+</head>
   <body>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=540 tabindex="-1"></canvas>
@@ -18,9 +41,14 @@
       </div>
       <div id="unity-warning"> </div>
       <div id="unity-footer">
-        <div id="unity-logo-title-footer"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Tower Defense</div>
+          <div id="unity-logo-title-footer"></div>
+          <div id="unity-fullscreen-button"></div>
+          <div id="unity-build-title">Tower Defense</div>
+          <div id="external-links">
+              <a href="https://github.com/shlason/shlason.github.io/tree/main/games/tower-defense" target="_blank">專案位置 - GitHub</a>
+              <a href="https://www.youtube.com/watch?v=TVggAGk-iDw" target="_blank">Demo 影片 - YouTube</a>
+              <a href="https://drive.google.com/file/d/1NXlS_0Lthgu2izDo_Q3e5wS4cQJA-gj-/view?usp=sharing" target="_blank">Windows 版下載點 - Google Drive</a>
+          </div>
       </div>
     </div>
     <script>
