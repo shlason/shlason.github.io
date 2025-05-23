@@ -1,0 +1,5 @@
+baseURL = 'https://shlason.github.io/blog'
+languageCode = 'en-us'
+theme = "PaperMod"
+title = 'My New Hugo Site'
+pagination.pagerSize = 5
