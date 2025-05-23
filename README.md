@@ -1,3 +1,0 @@
-# shlason.github.io
-
-temporary /public path...
