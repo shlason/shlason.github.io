@@ -1,5 +1,5 @@
 baseURL = 'https://shlason.github.io'
 languageCode = 'en-us'
 theme = "PaperMod"
-title = 'Shlason's blog'
+title = "Shlason's blog"
 pagination.pagerSize = 10
