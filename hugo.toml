@@ -1,5 +1,17 @@
-baseURL = 'https://shlason.github.io'
-languageCode = 'en-us'
+baseURL = "https://shlason.github.io/public"
+defaultContentLanguage = "zh"
+defaultContentLanguageInSubdir = false
+[languages]
+  [languages.zh]
+    languageName = "中文"
+    languageCode = "zh-tw"
+    contentDir = "content/zh"
+    weight = 1
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    contentDir = "content/en"
+    weight = 2
 theme = "PaperMod"
 title = "Shlason's blog"
 pagination.pagerSize = 10

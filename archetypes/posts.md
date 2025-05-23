@@ -3,7 +3,9 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 categories: []
 tags: []
-cover: "/images/uploads/cover.jpg"
+cover:
+  image: "/images/article-name/xxx.png"
+  alt: "description"
 draft: true
 description: ""
 ---
