@@ -3,7 +3,7 @@ backend:
   repo: shlason/shlason.github.io
   branch: main
   base_url: https://auth.staticcms.org
-  auth_endpoint: api/auth
+  auth_endpoint: api/auth/callback
   client_id: Ov23lirBn4se8leLtmWO
 
 media_folder: "static/images/uploads"
