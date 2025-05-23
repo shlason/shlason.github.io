@@ -1,4 +1,4 @@
-baseURL = "https://shlason.github.io/public"
+baseURL = "https://shlason.github.io/"
 defaultContentLanguage = "zh"
 defaultContentLanguageInSubdir = false
 [languages]
