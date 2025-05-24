@@ -1,0 +1,61 @@
+baseURL: "https://shlason.github.io/"
+languageCode: "en-us"
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: false
+theme: "PaperMod"
+title: "Shlason's blog"
+
+pagination:
+  pagerSize: 5
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  homeInfoParams:
+    Title: "👋 Hi"
+    Content: |
+      This is my personal blog, where I share what I learn in **computer graphics**, **game development**, **mathematics**, **algorithms**, and **English**, as well as thoughts from everyday life.
+
+      If you notice any mistakes or issues, feel free to let me know — I'd really appreciate it!
+
+      Or just say hi — I'm always happy to connect!
+  socialIcons:
+    - name: github
+      title: Go to my GitHub
+      url: "https://github.com/shlason"
+  env: production
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 2
+    keys:
+      - title
+      - description
+      - content
+  assets:
+    disableFingerprinting: false
+
+menu:
+  main:
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 10
+    - identifier: archive
+      name: Archive
+      url: /archives/
+      weight: 20
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 30
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 40

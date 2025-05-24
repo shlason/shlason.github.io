@@ -8,4 +8,5 @@ cover:
   alt: "description"
 draft: true
 description: ""
+summary: ""
 ---

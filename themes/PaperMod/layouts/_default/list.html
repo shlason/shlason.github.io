@@ -87,6 +87,21 @@
   {{- if not (.Param "hideMeta") }}
   <footer class="entry-footer">
     {{- partial "post_meta.html" . -}}
+    {{- if .Params.tags }}
+    <div class="tags" style="padding: 2px;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: flex-end; margin-top: 5px;">
+        {{ range .Params.tags }}
+        <a href="/tags/{{ . | urlize }}" style="margin-right: 5px; 
+                    color: white; 
+                    background-color: rgb(55, 162, 121); 
+                    border-radius: 6px; 
+                    padding: 1px 12px; ">
+          {{ . }}
+        </a>
+        {{ end }}
+      </div>
+    </div>
+    {{- end }}
   </footer>
   {{- end }}
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
