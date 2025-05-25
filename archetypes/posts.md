@@ -9,4 +9,6 @@ cover:
 draft: true
 description: ""
 summary: ""
+ShowToc: true
+TocOpen: true
 ---

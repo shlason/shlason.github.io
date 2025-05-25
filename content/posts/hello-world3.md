@@ -9,6 +9,8 @@ cover:
 draft: false
 description: "My first article."
 summary: "My first article."
+ShowToc: true
+TocOpen: true
 ---
 # Hello World3!
 

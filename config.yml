@@ -14,19 +14,32 @@ markup:
       unsafe: true
 
 params:
-  homeInfoParams:
-    Title: "👋 Hi"
-    Content: |
-      This is my personal blog, where I share what I learn in **computer graphics**, **game development**, **mathematics**, **algorithms**, and **English**, as well as thoughts from everyday life.
-
-      If you notice any mistakes or issues, feel free to let me know — I'd really appreciate it!
-
-      Or just say hi — I'm always happy to connect!
+  env: production
+  ShowCodeCopyButtons: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowReadingTime: true
+  cover:
+    linkFullImages: true
+  assets:
+    disableFingerprinting: false
+  editPost:
+    URL: "https://github.com/shlason/shlason.github.io/tree/main/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
   socialIcons:
     - name: github
       title: Go to my GitHub
       url: "https://github.com/shlason"
-  env: production
+  homeInfoParams:
+    Title: "👋 Hi"
+    Content: |
+      ✍️ This is my personal blog, where I share what I learn in **computer graphics**, **game development**, **mathematics**, **algorithms**, and **English**, as well as thoughts from everyday life.
+
+      🙏 If you notice any mistakes or issues, feel free to let me know — I'd really appreciate it!
+
+      📬 Or just say hi — I'm always happy to connect!
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -38,8 +51,8 @@ params:
       - title
       - description
       - content
-  assets:
-    disableFingerprinting: false
+  
+  
 
 menu:
   main:
@@ -59,3 +72,9 @@ menu:
       name: Tags
       url: /tags/
       weight: 40
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
