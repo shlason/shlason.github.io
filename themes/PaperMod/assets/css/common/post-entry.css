@@ -72,6 +72,22 @@
     font-size: 13px;
 }
 
+.entry-footer .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+.entry-footer .tags a {
+    color: inherit;
+    margin-left: 8px;
+    padding: 4px 12px;
+    border-radius: 6px;
+    background: var(--code-bg);
+    z-index: 1;
+}
+
 .entry-link {
     position: absolute;
     left: 0;
@@ -99,6 +115,10 @@
     border-radius: var(--radius);
     width: 100%;
     height: auto;
+}
+
+.entry-cover figcaption {
+    margin-top: 8px;
 }
 
 .entry-cover a {

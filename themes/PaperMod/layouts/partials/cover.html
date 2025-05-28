@@ -56,8 +56,14 @@
 
     {{- /*  Display Caption  */}}
     {{- if $.IsSingle }}
-        {{ with .Params.cover.caption -}}
-            <figcaption>{{ . | markdownify }}</figcaption>
+        {{ if .Params.cover.caption -}}
+            <figcaption>
+                {{if .Params.cover.link -}}
+                    <a href="{{.Params.cover.link}}" target="_blank" rel="noopener noreferrer">{{ .Params.cover.caption | markdownify }}</a>
+                {{- else}}
+                    {{ .Params.cover.caption | markdownify }}
+                {{- end}}
+            </figcaption>
         {{- end }}
     {{- end }}
 </figure>
