@@ -48,7 +48,7 @@
 }
 
 .tag-entry .entry-cover {
-    display: none;
+    /* display: none; */
 }
 
 .entry-header h2 {
@@ -72,14 +72,31 @@
     font-size: 13px;
 }
 
-.entry-footer .tags {
+.entry-footer .footer-taxonomies {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    align-items: flex-start;
+    justify-content: space-between;
     margin-top: 8px;
 }
 
-.entry-footer .tags a {
+.entry-footer .footer-taxonomies .taxonomies-categories {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    border-right: 1px solid var(--secondary);
+    padding-right: 8px;
+}
+
+.entry-footer .footer-taxonomies .taxonomies-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-basis: 70%;
+    row-gap: 8px;
+}
+
+.entry-footer .footer-taxonomies a {
     color: inherit;
     margin-left: 8px;
     padding: 4px 12px;

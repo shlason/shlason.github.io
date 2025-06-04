@@ -88,12 +88,22 @@
   <footer class="entry-footer">
     {{- partial "post_meta.html" . -}}
     {{- if .Params.tags }}
-    <div class="tags">
-      {{ range .Params.tags }}
-      <a href="/tags/{{ . | urlize }}">
-        # {{ . }}
-      </a>
-      {{ end }}
+    <div class="footer-taxonomies">
+      <div class="taxonomies-categories">
+        <span>Series:</span>
+        {{ range .Params.categories }}
+          <a href="/posts/{{ . | urlize }}">
+            {{ . }}
+          </a>
+        {{ end }}
+      </div>
+      <div class="taxonomies-tags">
+        {{ range .Params.tags }}
+          <a href="/tags/{{ . | urlize }}">
+            # {{ . }}
+          </a>
+        {{ end }}
+      </div>
     </div>
     {{- end }}
   </footer>
